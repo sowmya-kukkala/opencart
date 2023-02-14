@@ -22,6 +22,11 @@
           				<groupId>org.apache.maven.plugins</groupId>
           				<artifactId>maven-compiler-plugin</artifactId>
           				<version>3.10.1</version>
+					<configuration>
+                    				<source>${project.java.version}</source>
+                    				<target>${project.java.version}</target>
+                    			<encoding>${project.build.sourceEncoding}</encoding>
+                			</configuration>
         			</plugin>
 		  </plugins>
 	  </pluginManagement>
